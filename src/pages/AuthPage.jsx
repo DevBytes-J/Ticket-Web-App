@@ -15,7 +15,7 @@ export const AuthPage = ({
     <div className="flex-1 flex items-center justify-center px-4 py-12">
       <div className="bg-white rounded-2xl shadow-xl p-8 w-full max-w-md">
         <div className="text-center mb-8">
-          <Ticket className="w-16 h-16 mx-auto mb-4 text-indigo-600" />
+          <Ticket className="w-16 h-16 mx-auto mb-4 text-dark-bg" />
           <h2 className="text-3xl font-bold text-gray-800">
             {authMode === "login" ? "Welcome Back" : "Create Account"}
           </h2>
@@ -34,7 +34,7 @@ export const AuthPage = ({
                 }
                 className={`w-full px-4 py-3 border ${
                   authErrors.name ? "border-red-500" : "border-gray-300"
-                } rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500`}
+                } rounded-lg focus:outline-none focus:ring-2 focus:ring-primary`}
                 placeholder="Your name"
               />
               {authErrors.name && (
@@ -54,7 +54,7 @@ export const AuthPage = ({
               }
               className={`w-full px-4 py-3 border ${
                 authErrors.email ? "border-red-500" : "border-gray-300"
-              } rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500`}
+              } rounded-lg focus:outline-none focus:ring-2 focus:ring-primary`}
               placeholder="your@email.com"
             />
             {authErrors.email && (
@@ -73,7 +73,7 @@ export const AuthPage = ({
               }
               className={`w-full px-4 py-3 border ${
                 authErrors.password ? "border-red-500" : "border-gray-300"
-              } rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500`}
+              } rounded-lg focus:outline-none focus:ring-2 focus:ring-primary`}
               placeholder="••••••••"
             />
             {authErrors.password && (
@@ -82,7 +82,7 @@ export const AuthPage = ({
           </div>
           <button
             onClick={onAuth}
-            className="w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition"
+            className="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-pink-800 transition cursor-pointer"
           >
             {authMode === "login" ? "Sign In" : "Sign Up"}
           </button>
@@ -92,7 +92,7 @@ export const AuthPage = ({
             onClick={() =>
               setAuthMode(authMode === "login" ? "register" : "login")
             }
-            className="text-indigo-600 hover:text-indigo-800 font-semibold"
+            className="text-primary hover:text-pink-500 font-semibold cursor-pointer"
           >
             {authMode === "login"
               ? "Need an account? Sign up"
@@ -102,7 +102,7 @@ export const AuthPage = ({
         <div className="mt-4 text-center">
           <button
             onClick={() => onNavigate("landing")}
-            className="text-gray-600 hover:text-gray-800 flex items-center gap-2 mx-auto"
+            className="text-gray-600 hover:text-gray-950 flex items-center gap-2 mx-auto hover:cursor-pointer"
           >
             <Home className="w-4 h-4" />
             Back to home

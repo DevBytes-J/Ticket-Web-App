@@ -38,7 +38,7 @@ export const TicketModal = ({
               }
               className={`w-full px-4 py-3 border ${
                 formErrors.title ? "border-red-500" : "border-gray-300"
-              } rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500`}
+              } rounded-lg focus:outline-none focus:ring-2 focus:ring-primary`}
               placeholder="Enter ticket title"
             />
             {formErrors.title && (
@@ -56,7 +56,7 @@ export const TicketModal = ({
               }
               className={`w-full px-4 py-3 border ${
                 formErrors.description ? "border-red-500" : "border-gray-300"
-              } rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500`}
+              } rounded-lg focus:outline-none focus:ring-2 focus:ring-primary`}
               rows="4"
               placeholder="Enter ticket description"
             />
@@ -75,7 +75,7 @@ export const TicketModal = ({
               onChange={(e) =>
                 setFormData({ ...formData, priority: e.target.value })
               }
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
             >
               <option value="low">Low</option>
               <option value="medium">Medium</option>
@@ -93,7 +93,7 @@ export const TicketModal = ({
               }
               className={`w-full px-4 py-3 border ${
                 formErrors.status ? "border-red-500" : "border-gray-300"
-              } rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500`}
+              } rounded-lg focus:outline-none focus:ring-2 focus:ring-primary`}
             >
               <option value="open">Open</option>
               <option value="in_progress">In Progress</option>
@@ -106,7 +106,7 @@ export const TicketModal = ({
           <div className="flex gap-3">
             <button
               onClick={onSubmit}
-              className="flex-1 bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition"
+              className="flex-1 bg-primary text-white py-3 rounded-lg font-semibold hover:bg-primary transition"
             >
               {isEditing ? "Update" : "Create"}
             </button>

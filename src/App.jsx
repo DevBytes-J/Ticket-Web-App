@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { LandingPage } from "./pages/LandingPage";
+import LandingPage from "./pages/LandingPage";
 import { AuthPage } from "./pages/AuthPage";
 import { DashboardPage } from "./pages/DashboardPage";
 import { TicketsPage } from "./pages/TicketsPage";
@@ -168,13 +168,6 @@ function App() {
     return true;
   };
 
-  const getStats = () => ({
-    total: tickets.length,
-    open: tickets.filter((t) => t.status === "open").length,
-    inProgress: tickets.filter((t) => t.status === "in_progress").length,
-    closed: tickets.filter((t) => t.status === "closed").length,
-  });
-
   return (
     <>
       {currentPage === "landing" && <LandingPage onNavigate={setCurrentPage} />}
@@ -196,7 +189,7 @@ function App() {
           user={user}
           onLogout={handleLogout}
           onNavigate={requireAuth}
-          stats={getStats()}
+          tickets={tickets} // ✅ Pass tickets here
         />
       )}
 

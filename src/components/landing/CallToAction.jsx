@@ -10,7 +10,7 @@ export const CallToAction = ({ onGetStarted }) => (
       </p>
       <button
         onClick={onGetStarted}
-        className="bg-indigo-600 text-white px-10 py-4 rounded-lg text-lg font-semibold hover:bg-indigo-700 transition shadow-lg"
+        className="py-3 px-8 text-lg rounded-2xl font-bold bg-dark-bg text-white shadow-xl transition transform hover:scale-105 hover:shadow-primary/50 hover:cursor-pointer"
       >
         Start Free Trial
       </button>

@@ -6,10 +6,10 @@ import {
 } from "lucide-react";
 export const Navbar = ({ user, onLogout, onNavigate, currentPage }) => (
   <nav className="bg-white shadow-sm border-b">
-    <div className="max-w-7xl mx-auto px-4 py-4 flex flex-wrap justify-between items-center gap-4">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex flex-wrap justify-between items-center gap-4">
       <div className="flex items-center">
-        <Ticket className="w-8 h-8 text-indigo-600 mr-3" />
-        <span className="text-2xl font-bold text-gray-800">TicketFlow</span>
+        <Ticket className="w-8 h-8 text-dark-bg mr-3" />
+        <span className="text-2xl font-bold text-gray-800">SwiftPass</span>
       </div>
       <div className="flex items-center gap-4 flex-wrap">
         {currentPage === "dashboard" && (

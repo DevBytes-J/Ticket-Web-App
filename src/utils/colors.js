@@ -7,7 +7,7 @@ export const getPriorityColor = (priority) =>
 
 export const getStatusColor = (status) =>
   ({
-    open: "bg-green-100 text-green-800",
-    in_progress: "bg-amber-100 text-amber-800",
-    closed: "bg-gray-100 text-gray-800",
+    open: "bg-green-600 text-green-800",
+    in_progress: "bg-amber-600 text-amber-800",
+    closed: "bg-gray-600 text-gray-800",
   }[status] || "bg-green-100 text-green-800");

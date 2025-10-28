@@ -8,7 +8,7 @@ export const TicketCard = ({ ticket, onEdit, onDelete }) => (
       <div className="flex gap-2">
         <button
           onClick={() => onEdit(ticket)}
-          className="text-indigo-600 hover:text-indigo-800 p-2 hover:bg-indigo-50 rounded-lg transition"
+          className="text-primary hover:text-indigo-800 p-2 hover:bg-indigo-50 rounded-lg transition"
         >
           <Edit2 className="w-5 h-5" />
         </button>

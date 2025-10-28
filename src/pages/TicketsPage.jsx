@@ -37,7 +37,7 @@ export const TicketsPage = ({
           <h2 className="text-2xl font-bold text-gray-800">All Tickets</h2>
           <button
             onClick={() => onOpenModal()}
-            className="flex items-center gap-2 bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition"
+            className="flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-lg hover:bg-pink-500 transition hover:cursor-pointer"
           >
             <Plus className="w-5 h-5" />
             New Ticket
