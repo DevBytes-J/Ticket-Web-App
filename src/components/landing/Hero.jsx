@@ -5,7 +5,6 @@ export const Hero = ({ onGetStarted }) => (
 
     <div className="max-w-7xl mx-auto px-4 py-20 relative z-10">
       <div className="container mx-auto px-4 relative z-20 text-center">
-        {/* App Name & Catchy Description */}
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-4 leading-tight">
           SwiftPass Ticketing
         </h1>
@@ -14,7 +13,6 @@ export const Hero = ({ onGetStarted }) => (
           resolution.
         </p>
 
-        {/* Call-to-Action Buttons */}
         <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
           <button
             onClick={onGetStarted}

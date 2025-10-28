@@ -11,7 +11,6 @@ import { GiPadlock } from "react-icons/gi";
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Feature Card 1: Trust/Security */}
           <div className="p-6 bg-white rounded-xl shadow-2xl transition duration-300 hover:shadow-primary/50 transform hover:-translate-y-1">
             <div className="text-5xl text-gray-800 mb-4">
              <CgTrack/>
@@ -25,7 +24,6 @@ import { GiPadlock } from "react-icons/gi";
             </p>
           </div>
 
-          {/* Feature Card 2: Speed/Convenience */}
           <div className="p-6 bg-white rounded-xl shadow-2xl transition duration-300 hover:shadow-primary/50 transform hover:-translate-y-1">
             <div className="text-5xl text-primary mb-4">
               <GiPadlock/>
@@ -38,7 +36,6 @@ import { GiPadlock } from "react-icons/gi";
             </p>
           </div>
 
-          {/* Feature Card 3: Discovery/Local */}
           <div className="p-6 bg-white rounded-xl shadow-2xl transition duration-300 hover:shadow-primary/50 transform hover:-translate-y-1">
             <div className="text-5xl text-gray-800 mb-4">
               <IoCreate/>

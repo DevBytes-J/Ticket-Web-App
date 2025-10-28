@@ -3,7 +3,6 @@ import { Navbar } from "../components/layout/Navbar";
 import { Footer } from "../components/layout/Footer";
 
 export const DashboardPage = ({ user, onLogout, onNavigate, tickets = [] }) => {
-  // ✅ Compute stats directly from tickets prop
   const stats = useMemo(() => {
     return {
       total: tickets.length,

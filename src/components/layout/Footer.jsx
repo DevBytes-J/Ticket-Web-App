@@ -1,7 +1,6 @@
  export const Footer = ({ onNavigate }) => (
    <footer className="bg-gray-800 text-white py-12 px-4 mt-auto">
      <div className="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
-       {/* Brand Info */}
        <div>
          <h4 className="text-xl font-bold mb-4 text-primary">SwiftPass</h4>
          <p className="text-sm text-gray-400">
@@ -9,7 +8,6 @@
          </p>
        </div>
 
-       {/* Quick Links */}
        <div>
          <h4 className="font-semibold mb-4 border-b border-primary/50 pb-1">
            Quick Links
@@ -36,7 +34,6 @@
          </ul>
        </div>
 
-       {/* Support */}
        <div>
          <h4 className="font-semibold mb-4 border-b border-primary/50 pb-1">
            Support
