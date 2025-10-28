@@ -60,24 +60,6 @@
          </ul>
        </div>
 
-       {/* Follow Us */}
-       <div>
-         <h4 className="font-semibold mb-4 border-b border-primary/50 pb-1">
-           Connect
-         </h4>
-         <div className="flex space-x-4">
-           {/* Simple Social Icons Placeholder */}
-           <div className="w-6 h-6 bg-gray-600 rounded-full flex items-center justify-center text-xs hover:bg-primary transition">
-             F
-           </div>
-           <div className="w-6 h-6 bg-gray-600 rounded-full flex items-center justify-center text-xs hover:bg-primary transition">
-             T
-           </div>
-           <div className="w-6 h-6 bg-gray-600 rounded-full flex items-center justify-center text-xs hover:bg-primary transition">
-             I
-           </div>
-         </div>
-       </div>
      </div>
    </footer>
  );
